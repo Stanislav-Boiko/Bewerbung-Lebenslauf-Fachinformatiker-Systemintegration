@@ -431,6 +431,16 @@ function App() {
                             >
                                 🚀 Mein Abschlussprojekt ansehen
                             </button>
+                            <p
+                                style={{
+                                    marginTop: "0.5rem",
+                                    fontSize: "0.85rem",
+                                    color: "#666",
+                                    fontStyle: "italic",
+                                }}
+                            >
+                                * Das Projekt unterstützt derzeit nur ukrainische Sprache
+                            </p>
                         </div>
 
                         <div className="experience-item">
