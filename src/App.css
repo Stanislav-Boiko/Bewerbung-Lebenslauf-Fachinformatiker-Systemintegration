@@ -270,6 +270,95 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Клікабельні елементи сайдбару */
+.sidebar-item.clickable {
+    cursor: pointer;
+}
+
+.sidebar-item.clickable:active {
+    transform: translateX(10px);
+}
+
+/* Кнопка сертифікату */
+.certificate-button {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 6px 12px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.certificate-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Модальне вікно */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
 /* Плавна прокрутка */
 html {
     scroll-behavior: smooth;
@@ -283,15 +372,6 @@ html {
     hyphens: auto;
     -webkit-hyphenate-limit-before: 3;
     -webkit-hyphenate-limit-after: 3;
-}
-
-/* Клікабельні елементи сайдбару */
-.sidebar-item.clickable {
-    cursor: pointer;
-}
-
-.sidebar-item.clickable:active {
-    transform: translateX(10px);
 }
 
 /* Responsive Design */
@@ -340,6 +420,31 @@ html {
     .sidebar-item p {
         word-break: break-word;
         hyphens: auto;
+    }
+
+    /* Адаптивність кнопки сертифікату */
+    .certificate-button {
+        display: block;
+        margin: 0.5rem 0 0 0;
+        width: fit-content;
+    }
+
+    /* Адаптивність модального вікна */
+    .modal-overlay {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
     }
 
     /* Адаптивність для фотографії */

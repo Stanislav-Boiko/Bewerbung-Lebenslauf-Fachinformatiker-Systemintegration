@@ -1,8 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
     const [currentPage, setCurrentPage] = useState("bewerbung");
+    const [showCertificate, setShowCertificate] = useState(false);
+
+    // Обробка клавіші Escape для закриття модального вікна
+    useEffect(() => {
+        const handleEscapeKey = (event) => {
+            if (event.key === "Escape") {
+                setShowCertificate(false);
+            }
+        };
+
+        if (showCertificate) {
+            document.addEventListener("keydown", handleEscapeKey);
+            // Блокування прокрутки фону
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+
+        return () => {
+            document.removeEventListener("keydown", handleEscapeKey);
+            document.body.style.overflow = "unset";
+        };
+    }, [showCertificate]);
 
     const BewerbungPage = () => {
         const scrollToSection = (sectionId) => {
@@ -506,6 +529,12 @@ function App() {
                         </p>
                         <p>
                             <strong>Deutsch:</strong> B1
+                            <button
+                                className="certificate-button"
+                                onClick={() => setShowCertificate(true)}
+                            >
+                                📜 Zertifikat
+                            </button>
                         </p>
                         <p>
                             <strong>Englisch:</strong> Grundkenntnisse (A1)
@@ -557,6 +586,31 @@ function App() {
                 <BewerbungPage />
             ) : (
                 <LebenslaufPage />
+            )}
+
+            {/* Модальне вікно для сертифікату */}
+            {showCertificate && (
+                <div 
+                    className="modal-overlay"
+                    onClick={() => setShowCertificate(false)}
+                >
+                    <div 
+                        className="modal-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            className="modal-close"
+                            onClick={() => setShowCertificate(false)}
+                        >
+                            ×
+                        </button>
+                        <img
+                            src="/Zertifikat-DTZ-B1-Stanislav-Boiko.png"
+                            alt="Deutsch-Test für Zuwanderer B1 Zertifikat"
+                            className="modal-image"
+                        />
+                    </div>
+                </div>
             )}
         </div>
     );
