@@ -1,14 +1,14 @@
-# Bewerbung & Lebenslauf - Stanislav Boiko
+# Bewerbung - Fachinformatiker für Systemintegration
 
-Eine moderne, responsive React-Anwendung für Bewerbung und Lebenslauf mit Fokus auf Frontend-Entwicklung.
+Eine moderne, responsive React-Anwendung für Bewerbung und Lebenslauf mit Fokus auf **Systemintegration** und Ausbildungsstart **2026**.
 
 ## 🚀 Live Demo
 
-[Projekt ansehen](https://bewerbung-lebenslauf.vercel.app) *(Link wird nach Deployment verfügbar)*
+[Projekt ansehen](https://bewerbung-systemintegration.vercel.app) *(Link wird nach Deployment verfügbar)*
 
 ## 📋 Projektbeschreibung
 
-Diese Single-Page-Anwendung wurde als professionelles Portfolio für Bewerbungen als **Fachinformatiker für Anwendungsentwicklung (Frontend)** entwickelt.
+Diese Single-Page-Anwendung wurde als professionelles Portfolio für Bewerbungen als **Fachinformatiker für Systemintegration** entwickelt mit geplantem Ausbildungsstart im **Jahr 2026**.
 
 ### ✨ Features
 
@@ -17,7 +17,16 @@ Diese Single-Page-Anwendung wurde als professionelles Portfolio für Bewerbungen
 - **Zwei Hauptseiten**: Bewerbung und Lebenslauf
 - **Intelligente Navigation**: Sidebar mit Smooth-Scrolling zu Sektionen
 - **Portfolio-Integration**: Direkter Link zum Dan.IT Abschlussprojekt
+- **Zertifikat-Viewer**: Interaktiver Modal für Sprachzertifikate
 - **SEO-optimiert**: Meta-Tags und Open Graph für bessere Auffindbarkeit
+
+## 🎯 Zielstellung
+
+Bewerbung um einen Ausbildungsplatz als **Fachinformatiker für Systemintegration**:
+- **Ausbildungsstart:** 2026
+- **Vorbereitung 2025:** Verbesserung der Deutschkenntnisse auf B2-Niveau
+- **IT-Erfahrung:** 2,5 Jahre aktive Entwicklung
+- **Fokus:** IT-Infrastruktur, Systemintegration und Backend-Technologien
 
 ## 🛠️ Technologien
 
