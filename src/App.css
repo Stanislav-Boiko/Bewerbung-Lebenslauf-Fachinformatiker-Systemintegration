@@ -1,3 +1,28 @@
+/* Миниатюра DAN.IT сертификата */
+.certificate-thumb {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.certificate-thumb:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.certificate-thumb-label {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
 * {
     margin: 0;
     padding: 0;

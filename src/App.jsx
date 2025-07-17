@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
     const [currentPage, setCurrentPage] = useState("bewerbung");
     const [showCertificate, setShowCertificate] = useState(false);
+    const [showDanitCert, setShowDanitCert] = useState(false);
 
     // Обробка клавіші Escape для закриття модального вікна
     useEffect(() => {
@@ -463,43 +464,59 @@ function App() {
                                 und Backend-Entwicklung, Datenbanken und
                                 Hosting-Plattformen.
                             </p>
-                            <button
-                                className="project-button"
-                                onClick={() =>
-                                    window.open(
-                                        "https://final-project-flax-ten.vercel.app/profil/login",
-                                        "_blank",
-                                    )
-                                }
-                                style={{
-                                    marginTop: "1rem",
-                                    padding: "10px 20px",
-                                    background:
-                                        "linear-gradient(45deg, #667eea, #764ba2)",
-                                    color: "white",
-                                    border: "none",
-                                    borderRadius: "8px",
-                                    cursor: "pointer",
-                                    fontSize: "0.95rem",
-                                    fontWeight: "600",
-                                    transition: "all 0.3s ease",
-                                    boxShadow:
-                                        "0 3px 10px rgba(102, 126, 234, 0.3)",
-                                }}
-                                onMouseOver={(e) => {
-                                    e.target.style.transform =
-                                        "translateY(-2px)";
-                                    e.target.style.boxShadow =
-                                        "0 5px 15px rgba(102, 126, 234, 0.4)";
-                                }}
-                                onMouseOut={(e) => {
-                                    e.target.style.transform = "translateY(0)";
-                                    e.target.style.boxShadow =
-                                        "0 3px 10px rgba(102, 126, 234, 0.3)";
-                                }}
-                            >
-                                🚀 Mein Abschlussprojekt ansehen
-                            </button>
+
+                            <div style={{ display: "flex", flexDirection: "column", alignItems: "start", marginBottom: "1rem" }}>
+                                    <img
+                                        src="/Zertifikat-DAN.IT-Stanislav-Boiko.png"
+                                        alt="DAN.IT Frontend Certificate"
+                                        className="certificate-thumb"
+                                        title="DAN.IT Frontend Zertifikat anzeigen"
+                                        onClick={() => setShowDanitCert(true)}
+                                        style={{ cursor: "pointer", width: "170px", height: "125px", objectFit: "cover", borderRadius: "8px", border: "2px solid #667eea", boxShadow: "0 2px 8px rgba(102,126,234,0.2)", transition: "transform 0.2s" }}
+                                    />
+                                    <span className="certificate-thumb-label" style={{ fontSize: "0.85rem", color: "#555", marginTop: "0.3rem" }}>DAN.IT Zertifikat</span>
+                                </div>
+
+                            <div style={{ display: "flex", alignItems: "center", gap: "1.5rem", flexWrap: "wrap" }}>
+                                
+                                <button
+                                    className="project-button"
+                                    onClick={() =>
+                                        window.open(
+                                            "https://final-project-flax-ten.vercel.app/profil/login",
+                                            "_blank",
+                                        )
+                                    }
+                                    style={{
+                                        marginTop: "0.5rem",
+                                        padding: "10px 20px",
+                                        background:
+                                            "linear-gradient(45deg, #667eea, #764ba2)",
+                                        color: "white",
+                                        border: "none",
+                                        borderRadius: "8px",
+                                        cursor: "pointer",
+                                        fontSize: "0.95rem",
+                                        fontWeight: "600",
+                                        transition: "all 0.3s ease",
+                                        boxShadow:
+                                            "0 3px 10px rgba(102, 126, 234, 0.3)",
+                                    }}
+                                    onMouseOver={(e) => {
+                                        e.target.style.transform =
+                                            "translateY(-2px)";
+                                        e.target.style.boxShadow =
+                                            "0 5px 15px rgba(102, 126, 234, 0.4)";
+                                    }}
+                                    onMouseOut={(e) => {
+                                        e.target.style.transform = "translateY(0)";
+                                        e.target.style.boxShadow =
+                                            "0 3px 10px rgba(102, 126, 234, 0.3)";
+                                    }}
+                                >
+                                    🚀 Mein Abschlussprojekt ansehen
+                                </button>
+                            </div>
                             <p
                                 style={{
                                     marginTop: "0.5rem",
@@ -670,6 +687,22 @@ function App() {
                             src="/Zertifikat-DTZ-B1-Stanislav-Boiko.png"
                             alt="Deutsch-Test für Zuwanderer B1 Zertifikat"
                             className="modal-image"
+                        />
+                    </div>
+                </div>
+            )}
+            {/* Модальное окно для DAN.IT сертификата */}
+            {showDanitCert && (
+                <div className="modal-overlay" onClick={() => setShowDanitCert(false)}>
+                    <div className="modal-content" style={{ maxWidth: "95vw", maxHeight: "95vh" }} onClick={e => e.stopPropagation()}>
+                        <button className="modal-close" onClick={() => setShowDanitCert(false)}>
+                            ×
+                        </button>
+                        <img
+                            src="/Zertifikat-DAN.IT-Stanislav-Boiko.png"
+                            alt="DAN.IT Frontend Certificate"
+                            className="modal-image"
+                            style={{ maxHeight: "85vh", width: "auto", margin: "0 auto", display: "block" }}
                         />
                     </div>
                 </div>
