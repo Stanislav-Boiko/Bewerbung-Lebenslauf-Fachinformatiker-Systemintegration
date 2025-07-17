@@ -51,21 +51,21 @@ function App() {
                         onClick={() => scrollToSection("opening")}
                     >
                         <h4>Bewerbungsanschreiben</h4>
-                        <p>Ausbildungsplatz als Fachinformatiker Frontend</p>
+                        <p>Ausbildungsplatz als Fachinformatiker Systemintegration</p>
                     </div>
                     <div
                         className="sidebar-item clickable"
                         onClick={() => scrollToSection("background")}
                     >
                         <h4>Hintergrund & Kenntnisse</h4>
-                        <p>Dan.IT Education und erworbene Fähigkeiten</p>
+                        <p>IT-Entwicklung und Systemintegrations-Erfahrung</p>
                     </div>
                     <div
                         className="sidebar-item clickable"
                         onClick={() => scrollToSection("motivation")}
                     >
                         <h4>Motivation</h4>
-                        <p>Warum Frontend-Entwicklung meine Leidenschaft ist</p>
+                        <p>Warum Systemintegration meine Leidenschaft ist</p>
                     </div>
                     <div
                         className="sidebar-item clickable"
@@ -79,7 +79,7 @@ function App() {
                         onClick={() => scrollToSection("languages")}
                     >
                         <h4>Sprachkenntnisse</h4>
-                        <p>Deutsch, Englisch und Entwicklungspläne</p>
+                        <p>Deutsch B1→B2, Englisch und Ausbildungsstart 2026</p>
                     </div>
                     <div
                         className="sidebar-item clickable"
@@ -114,7 +114,7 @@ function App() {
                     <div className="content-section" id="opening">
                         <h2>
                             Bewerbung um einen Ausbildungsplatz als
-                            Fachinformatiker – Anwendungsentwicklung (Frontend)
+                            Fachinformatiker – Systemintegration ab 2026
                         </h2>
                         <p>
                             <strong>Sehr geehrte Damen und Herren,</strong>
@@ -122,9 +122,9 @@ function App() {
                         <p>
                             mit großem Interesse möchte ich mich um einen
                             Ausbildungsplatz als Fachinformatiker für
-                            Anwendungsentwicklung mit Schwerpunkt
-                            Frontend-Entwicklung in Ihrem Unternehmen bewerben.
-                            Gerne würde ich auch die Möglichkeit einer
+                            Systemintegration in Ihrem Unternehmen bewerben,
+                            mit Beginn der Ausbildung und Praktika ab dem Jahr
+                            2026. Gerne würde ich auch die Möglichkeit einer
                             Praktikumszeit mit anschließender Ausbildung und
                             Übernahme in Ihrem Unternehmen in Betracht ziehen.
                         </p>
@@ -133,14 +133,24 @@ function App() {
                     <div className="content-section" id="background">
                         <h2>Mein Hintergrund und Kenntnisse</h2>
                         <p>
-                            Seit zwei Jahren nehme ich an einem umfassenden
-                            Frontend-Entwicklungskurs der renommierten
-                            Online-Schule Dan.IT Education teil. In dieser Zeit
-                            habe ich fundierte Kenntnisse in modernen
-                            Web-Technologien erworben, darunter HTML, CSS,
-                            JavaScript, React, Git und TypeScript sowie
-                            Grundlagen der Backend-Entwicklung und
-                            Hosting-Plattformen wie Vercel, Render.
+                            Seit 2,5 Jahren beschäftige ich mich aktiv mit der
+                            IT-Entwicklung und habe in dieser Zeit umfassende
+                            Kenntnisse in verschiedenen Bereichen der
+                            Informationstechnologie erworben. Während meiner
+                            Ausbildung bei Dan.IT Education habe ich nicht nur
+                            Frontend-Technologien wie HTML, CSS, JavaScript und
+                            React erlernt, sondern auch wichtige Grundlagen der
+                            Backend-Entwicklung, Datenbanken, Git-Versionskontrolle
+                            und verschiedene Hosting-Plattformen kennengelernt.
+                        </p>
+                        <p>
+                            Besonders fasziniert mich die Systemintegration, da
+                            sie alle Aspekte der IT-Infrastruktur verbindet.
+                            Die Möglichkeit, komplexe Systeme zu verstehen, zu
+                            konfigurieren und zu optimieren, sowie die
+                            Gewährleistung reibungsloser Kommunikation zwischen
+                            verschiedenen Systemen und Anwendungen entspricht
+                            genau meinen Interessen und Stärken.
                         </p>
                         <p>
                             Während des Kurses konnte ich wertvolle Erfahrungen
@@ -155,21 +165,36 @@ function App() {
                     </div>
 
                     <div className="content-section" id="motivation">
-                        <h2>Warum Frontend-Entwicklung?</h2>
+                        <h2>Warum Systemintegration?</h2>
                         <p>
-                            Die Frontend-Entwicklung fasziniert mich besonders,
-                            weil sie die perfekte Verbindung zwischen
-                            technischer Programmierung und kreativem Design
-                            darstellt. Moderne Benutzeroberflächen zu entwickeln
-                            und intuitive Anwendungen zu schaffen, die das Leben
-                            der Menschen erleichtern, ist meine Leidenschaft.
+                            Die Systemintegration fasziniert mich besonders,
+                            weil sie das Herzstück jeder IT-Infrastruktur
+                            darstellt. Die Aufgabe, verschiedene Hardware- und
+                            Software-Komponenten zu einem funktionsfähigen und
+                            effizienten Gesamtsystem zu verbinden, erfordert
+                            sowohl technisches Verständnis als auch analytisches
+                            Denken – Eigenschaften, die ich sehr schätze und
+                            weiterentwickeln möchte.
                         </p>
                         <p>
-                            Zurzeit entwickle ich eigenständig eine
-                            Webanwendung, um mein Wissen praktisch anzuwenden
-                            und kontinuierlich auszubauen. Diese praktische
-                            Erfahrung zeigt mir täglich, wie viel Freude mir die
-                            Programmierung bereitet.
+                            Während meiner IT-Entwicklung habe ich erkannt, wie
+                            wichtig eine stabile und gut konfigurierte
+                            IT-Infrastruktur für den Erfolg eines Unternehmens
+                            ist. Von Netzwerkkonfigurationen über
+                            Datenbankanbindungen bis hin zur Integration
+                            verschiedener Anwendungen – all diese Aspekte der
+                            Systemintegration begeistern mich und motivieren
+                            mich, meine Kenntnisse in diesem Bereich zu
+                            vertiefen.
+                        </p>
+                        <p>
+                            Zurzeit entwickle ich eigenständig Projekte, um mein
+                            Wissen praktisch anzuwenden und gleichzeitig ein
+                            besseres Verständnis für die Integration
+                            verschiedener Systeme und Technologien zu entwickeln.
+                            Diese praktische Erfahrung zeigt mir täglich, wie
+                            viel Freude mir die Arbeit mit komplexen
+                            IT-Systemen bereitet.
                         </p>
                     </div>
 
@@ -213,8 +238,8 @@ function App() {
                             <div className="skill-item">
                                 <h4>Leidenschaft</h4>
                                 <p>
-                                    Echte Begeisterung für Webentwicklung und
-                                    Technologie
+                                    Echte Begeisterung für IT-Systeme und
+                                    Systemintegration
                                 </p>
                             </div>
                         </div>
@@ -225,18 +250,27 @@ function App() {
                         <p>
                             Meine Deutschkenntnisse befinden sich derzeit auf
                             dem Niveau B1, und ich arbeite kontinuierlich daran,
-                            sie weiter zu verbessern. Bei einer möglichen
-                            Praktikumszeit würde ich parallel mit einem
-                            PersonalPlan mein Deutsch auf das Niveau B2
-                            ausbauen.
+                            sie weiter zu verbessern. Im Laufe des Jahres 2025
+                            plane ich, meine Deutschkenntnisse auf das Niveau B2
+                            zu verbessern, um optimal auf den Ausbildungsbeginn
+                            im Jahr 2026 vorbereitet zu sein.
                         </p>
                         <p>
-                            Meine Englischkenntnisse befinden sich auf einem
-                            grundlegenden Niveau. Sobald ich mein Deutsch auf
-                            ein zufriedenstellendes Niveau gebracht habe, plane
-                            ich, mein Englisch gezielt zu verbessern, um in der
-                            internationalen Tech-Branche noch besser
-                            kommunizieren zu können.
+                            Parallel dazu plane ich auch, meine
+                            Englischkenntnisse im Jahr 2025 zu verbessern.
+                            Gute Englischkenntnisse sind in der heutigen
+                            IT-Branche unerlässlich, und ich möchte sicherstellen,
+                            dass ich sowohl auf Deutsch als auch auf Englisch
+                            effektiv kommunizieren kann, um in einem
+                            internationalen Arbeitsumfeld erfolgreich zu sein.
+                        </p>
+                        <p>
+                            <strong>Ausbildungsstart:</strong> Ich suche einen
+                            Ausbildungsplatz als Fachinformatiker für
+                            Systemintegration mit Beginn im Jahr 2026. Diese
+                            Zeitplanung ermöglicht es mir, meine Sprachkenntnisse
+                            optimal zu verbessern und mit den bestmöglichen
+                            Voraussetzungen in die Ausbildung zu starten.
                         </p>
                     </div>
 
@@ -244,18 +278,27 @@ function App() {
                         <h2>Schlusswort</h2>
                         <p>
                             Ich bin überzeugt, dass die Erfahrungen, die ich in
-                            den letzten zwei Jahren gesammelt habe, eine
-                            wertvolle Grundlage für meine Ausbildung darstellen.
-                            Besonders ansprechend finde ich Unternehmen, die auf
-                            moderne Technologien setzen und innovative Lösungen
-                            entwickeln.
+                            den letzten 2,5 Jahren in der IT-Entwicklung
+                            gesammelt habe, eine wertvolle Grundlage für meine
+                            Ausbildung als Fachinformatiker für Systemintegration
+                            darstellen. Besonders ansprechend finde ich
+                            Unternehmen, die auf moderne IT-Infrastrukturen
+                            setzen und innovative Systemlösungen entwickeln.
+                        </p>
+                        <p>
+                            Da ich einen Ausbildungsstart für das Jahr 2026
+                            anstrebe, habe ich im Jahr 2025 ausreichend Zeit,
+                            meine Deutschkenntnisse auf B2-Niveau zu verbessern
+                            und meine Englischkenntnisse zu erweitern. Diese
+                            Vorbereitung wird es mir ermöglichen, mit optimalen
+                            Voraussetzungen in die Ausbildung zu starten.
                         </p>
                         <p>
                             Ich habe keine Angst vor anspruchsvollen Aufgaben
                             und bin bereit, mich vollständig in die Ausbildung
                             einzubringen. Gerne würde ich Teil Ihres Teams
-                            werden und mich gemeinsam mit Ihnen
-                            weiterentwickeln.
+                            werden und mich gemeinsam mit Ihnen im Bereich der
+                            Systemintegration weiterentwickeln.
                         </p>
                         <p>
                             Über eine Einladung zu einem persönlichen Gespräch
@@ -410,12 +453,15 @@ function App() {
                     <div className="content-section" id="education">
                         <h2>Bildung</h2>
                         <div className="experience-item">
-                            <h4>Frontend-Entwicklung Online-Kurs</h4>
-                            <div className="date">08/2023 - 07/2025</div>
+                            <h4>IT-Entwicklung Online-Kurs</h4>
+                            <div className="date">08/2022 - 07/2025</div>
                             <div className="company">Dan.IT Education</div>
                             <p>
-                                Umfassende Ausbildung in modernen
-                                Web-Technologien und Frontend-Entwicklung
+                                Umfassende Ausbildung in IT-Technologien mit
+                                Schwerpunkt auf Webentwicklung, Systemintegration
+                                und IT-Infrastruktur. Kenntnisse in Frontend-
+                                und Backend-Entwicklung, Datenbanken und
+                                Hosting-Plattformen.
                             </p>
                             <button
                                 className="project-button"
@@ -494,7 +540,7 @@ function App() {
                         <div className="skills-grid">
                             <div className="skill-item">
                                 <h4>HTML</h4>
-                                <p>Grundlagen</p>
+                                <p>Grundlagen & Strukturierung</p>
                             </div>
                             <div className="skill-item">
                                 <h4>CSS</h4>
@@ -502,7 +548,7 @@ function App() {
                             </div>
                             <div className="skill-item">
                                 <h4>JavaScript</h4>
-                                <p>Programmierung</p>
+                                <p>Programmierung & Logik</p>
                             </div>
                             <div className="skill-item">
                                 <h4>React</h4>
@@ -515,6 +561,18 @@ function App() {
                             <div className="skill-item">
                                 <h4>Git</h4>
                                 <p>Versionskontrolle</p>
+                            </div>
+                            <div className="skill-item">
+                                <h4>Backend-Grundlagen</h4>
+                                <p>Server & Datenbanken</p>
+                            </div>
+                            <div className="skill-item">
+                                <h4>Hosting-Plattformen</h4>
+                                <p>Vercel, Render</p>
+                            </div>
+                            <div className="skill-item">
+                                <h4>CNC-Programmierung</h4>
+                                <p>Technische Systeme</p>
                             </div>
                         </div>
                     </div>
@@ -553,8 +611,12 @@ function App() {
                                 <p>Strategie & Logik</p>
                             </div>
                             <div className="skill-item">
-                                <h4>IT-Programmierung</h4>
+                                <h4>IT-Systemintegration</h4>
                                 <p>Kontinuierliches Lernen</p>
+                            </div>
+                            <div className="skill-item">
+                                <h4>Technische Systeme</h4>
+                                <p>Analyse & Optimierung</p>
                             </div>
                         </div>
                     </div>
